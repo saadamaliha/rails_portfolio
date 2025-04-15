@@ -1,0 +1,111 @@
+<div class="movies-section" style="background-color: #f8f0ff; padding: 3rem 0; border-radius: 15px;">
+  <div class="container">
+    <h1 class="text-center mb-4"><i class="fas fa-film movie-icon"></i> My Favorite Movies</h1>
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Taxi Driver -->
+      <div class="col">
+        <div class="card h-100 movie-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'taxidriver.jpg', class: 'img-fluid rounded-start movie-poster', alt: 'Taxi Driver poster' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Taxi Driver (1976)", "https://www.imdb.com/title/tt0075314/", target: "_blank", class: "movie-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Martin Scorsese</small></p>
+                <p class="card-text">A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Long Days Journey Into Night -->
+      <div class="col">
+        <div class="card h-100 movie-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'ldjtn.jpg', class: 'img-fluid rounded-start movie-poster', alt: 'Long Days Journey Into Night poster' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Long Day's Journey Into Night (2018)", "https://www.imdb.com/title/tt8359848/", target: "_blank", class: "movie-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Bi Gan</small></p>
+                <p class="card-text">A man returns to his hometown and recalls the mysterious woman he met years before.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulp Fiction -->
+      <div class="col">
+        <div class="card h-100 movie-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'pulpfiction.jpg', class: 'img-fluid rounded-start movie-poster', alt: 'Pulp Fiction poster' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Pulp Fiction (1994)", "https://www.imdb.com/title/tt0110912/", target: "_blank", class: "movie-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Quentin Tarantino</small></p>
+                <p class="card-text">The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anatomy of a Fall -->
+      <div class="col">
+        <div class="card h-100 movie-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'anatomyofafall.jpg', class: 'img-fluid rounded-start movie-poster', alt: 'Anatomy of a Fall poster' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Anatomy of a Fall (2023)", "https://www.imdb.com/title/tt17009710/", target: "_blank", class: "movie-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Justine Triet</small></p>
+                <p class="card-text">A woman is suspected of her husbands murder, and their blind son faces a moral dilemma.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chungking Express -->
+      <div class="col">
+        <div class="card h-100 movie-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'chungkingexpress.jpg', class: 'img-fluid rounded-start movie-poster', alt: 'Chungking Express poster' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Chungking Express (1994)", "https://www.imdb.com/title/tt0109424/", target: "_blank", class: "movie-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Wong Kar-wai</small></p>
+                <p class="card-text">Two melancholic Hong Kong policemen fall in love: one with a mysterious underworld figure, the other with a beautiful waitress.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to "Back to About", about_path, class: "btn btn-purple" %>
+    </div>
+  </div>
+</div>

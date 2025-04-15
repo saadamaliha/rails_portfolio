@@ -1,0 +1,33 @@
+<div class="portfolio-section" style="background-color: #f8f0ff; padding: 3rem 0; border-radius: 15px;">
+  <div class="container">
+    <h1 class="text-center mb-4"><i class="fas fa-folder-open portfolio-icon"></i> My Portfolio</h1>
+    
+    <div class="row justify-content-center">
+      <!-- Single Project Card -->
+      <div class="col-md-8 col-lg-6">
+        <div class="card portfolio-card">
+          <%= image_tag 'project1.jpg', class: 'card-img-top portfolio-image', alt: 'My Project' %>
+          <div class="card-body">
+            <h2 class="card-title">Personal Portfolio Website</h2>
+            <p class="card-text">This Rails application showcases my skills and projects. Built with Ruby on Rails, Bootstrap 5, and custom CSS/JavaScript. Features responsive design, dynamic content, and a cohesive visual theme.</p>
+            <div class="tech-tags mb-3">
+              <span class="badge bg-purple-light">Ruby on Rails</span>
+              <span class="badge bg-purple-light">Bootstrap</span>
+              <span class="badge bg-purple-light">HTML5</span>
+              <span class="badge bg-purple-light">CSS3</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted"><i class="fas fa-calendar"></i> <%= Date.today.strftime("%B %Y") %></small>
+              <div>
+                <%= link_to "Live Demo", root_path, class: "btn btn-purple me-2" %>
+                <%= link_to "View Code", "#", class: "btn btn-outline-purple" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

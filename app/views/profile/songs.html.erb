@@ -1,0 +1,116 @@
+<div class="songs-section" style="background-color: #f8f0ff; padding: 3rem 0; border-radius: 15px;">
+  <div class="container">
+    <h1 class="text-center mb-4"><i class="fas fa-music music-icon"></i> My Favorite Artists</h1>
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Breaking Benjamin -->
+      <div class="col">
+        <div class="card h-100 song-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'breakingbenji.jpg', class: 'img-fluid rounded-start album-cover', alt: 'Breaking Benjamin album cover' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Breaking Benjamin", "https://open.spotify.com/artist/5BtHciL0e0zOP7prIHn3pP", target: "_blank", class: "song-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Alternative Metal</small></p>
+                <p class="card-text">Recommended song: "The Diary of Jane"</p>
+                <%= link_to "Listen on Spotify", "https://open.spotify.com/track/0vpK5a0VdRmX4MsWQNtZ4Z", target: "_blank", class: "btn btn-spotify" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Beatles -->
+      <div class="col">
+        <div class="card h-100 song-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'beatles.jpg', class: 'img-fluid rounded-start album-cover', alt: 'The Beatles album cover' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "The Beatles", "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2", target: "_blank", class: "song-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Rock</small></p>
+                <p class="card-text">Recommended song: "Here Comes The Sun"</p>
+                <%= link_to "Listen on Spotify", "https://open.spotify.com/track/6dGnYIeXmHdcikdzNNDMm2", target: "_blank", class: "btn btn-spotify" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scorpions -->
+      <div class="col">
+        <div class="card h-100 song-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'scorpions.jpg', class: 'img-fluid rounded-start album-cover', alt: 'Scorpions album cover' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Scorpions", "https://open.spotify.com/artist/27T030eWyCQRmDyuvr1kxY", target: "_blank", class: "song-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Hard Rock</small></p>
+                <p class="card-text">Recommended song: "Wind of Change"</p>
+                <%= link_to "Listen on Spotify", "https://open.spotify.com/track/36Fi0hxN4kzg3C6HdTKrA5", target: "_blank", class: "btn btn-spotify" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pink Floyd -->
+      <div class="col">
+        <div class="card h-100 song-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'pinkfloyd.jpg', class: 'img-fluid rounded-start album-cover', alt: 'Pink Floyd album cover' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Pink Floyd", "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9", target: "_blank", class: "song-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Progressive Rock</small></p>
+                <p class="card-text">Recommended song: "Wish You Were Here"</p>
+                <%= link_to "Listen on Spotify", "https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1", target: "_blank", class: "btn btn-spotify" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nirvana -->
+      <div class="col">
+        <div class="card h-100 song-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag 'nirvana.jpg', class: 'img-fluid rounded-start album-cover', alt: 'Nirvana album cover' %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= link_to "Nirvana", "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh", target: "_blank", class: "song-link" %>
+                </h5>
+                <p class="card-text"><small class="text-muted">Grunge</small></p>
+                <p class="card-text">Recommended song: "Smells Like Teen Spirit"</p>
+                <%= link_to "Listen on Spotify", "https://open.spotify.com/track/5ghIJDpPoe3CfHMGu71E6T", target: "_blank", class: "btn btn-spotify" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to "Back to Home", root_path, class: "btn btn-purple" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="about-section" style="background-color: #f8f0ff; padding: 3rem 0;"> <!-- Light purple background -->
+  <div class="container">    
+    <div class="row align-items-center">
+      <!-- Image column (smaller) -->
+      <div class="col-md-5"> <!-- Changed from col-md-6 -->
+        <div class="about-image-wrapper text-center">
+          <img src="<%= asset_path('about.jpg') %>" class="img-fluid rounded about-image" alt="Saada Maliha" style="max-width: 80%;">
+        </div>
+      </div>
+      
+      <!-- Bio column -->
+      <div class="col-md-7"> <!-- Changed from col-md-6 -->
+        <h1 class="text-center mb-4">About Me</h1>
+        <h2 class="mb-3">Biography</h2>
+        <p class="lead">I am Saada Maliha, a first year student at Conn. I am a Computer Science and Quantitative Econometrics double major. My favorite space in Conn is the swing behind Cro.</p>
+        
+        <h3 class="mt-4">Skills</h3>
+        <ul class="list-group skill-list">
+          <li class="list-group-item skill-item">
+            <i class="fas fa-check skill-icon"></i> Coding
+          </li>
+          <li class="list-group-item skill-item">
+            <i class="fas fa-check skill-icon"></i> Painting
+          </li>
+          <li class="list-group-item skill-item">
+            <i class="fas fa-check skill-icon"></i> Go Karting
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <h3>My Interests</h3>
+    </div>
+    
+    <!-- Interest Cards Section with Themed Icons -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+      <!-- Movies Card -->
+      <div class="col">
+        <div class="card h-100 interest-card">
+          <div class="card-body text-center">
+            <i class="fas fa-film fa-3x mb-3 movie-icon"></i> <!-- Changed class -->
+            <h5 class="card-title">Favorite Movies</h5>
+            <p class="card-text">Discover the films that inspire me</p>
+            <%= link_to "Explore", movies_path, class: "btn btn-purple-outline" %> <!-- Changed button -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Songs Card -->
+      <div class="col">
+        <div class="card h-100 interest-card">
+          <div class="card-body text-center">
+            <i class="fas fa-music fa-3x mb-3 music-icon"></i> <!-- Changed class -->
+            <h5 class="card-title">Favorite Songs</h5>
+            <p class="card-text">The soundtrack of my life</p>
+            <%= link_to "Listen", songs_path, class: "btn btn-purple-outline" %> <!-- Changed button -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Books Card -->
+      <div class="col">
+        <div class="card h-100 interest-card">
+          <div class="card-body text-center">
+            <i class="fas fa-book-open fa-3x mb-3 book-icon"></i> <!-- Changed class -->
+            <h5 class="card-title">Favorite Books</h5>
+            <p class="card-text">Journeys through pages</p>
+            <%= link_to "Read", books_path, class: "btn btn-purple-outline" %> <!-- Changed button -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

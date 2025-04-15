@@ -1,0 +1,538 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+
+ @import "bootstrap";
+ @import "font-awesome";
+ @import "custom";
+ @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Kalnia+Glaze:wght@100..700&display=swap');
+ 
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Goldman", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.homepage-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: asset-url('homepage.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 2rem;
+  }
+  
+  .custom-jumbo {
+    background-color: rgba(255, 147, 230, 0.295); /* 70% opacity */
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+  }
+
+
+  .btn-custom {
+    background-color: #6a11cb; /* Purple gradient */
+    color: white;
+    border: none;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-image: linear-gradient(to right, #2575fc 0%, #6a11cb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+ .interest-card {
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .fa-film, .fa-music, .fa-book-open {
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover .fa-film {
+      transform: scale(1.1) rotate(-5deg);
+    }
+    &:hover .fa-music {
+      transform: scale(1.1);
+    }
+    &:hover .fa-book-open {
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+
+.navbar.bg-purple {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+    box-shadow: 0 2px 10px rgba(106, 17, 203, 0.3);
+    
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        color: #f8f9fa !important;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      }
+    }
+    
+    .navbar-toggler {
+      border-color: rgba(255,255,255,0.5);
+    }
+    
+    .dropdown-menu {
+      background: rgba(106, 17, 203, 0.95);
+      border: none;
+      
+      .dropdown-item {
+        color: white;
+        
+        &:hover {
+          background: rgba(255,255,255,0.1);
+        }
+      }
+    }
+  }
+  
+  .navbar.bg-purple.scrolled {
+    background: linear-gradient(135deg, #5a0db5 0%, #1a65e8 100%) !important;
+  }
+
+  /* About Section Styling */
+.about-section {
+    background-color: #f8f0ff; /* Light purple */
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1);
+  }
+  
+  .about-image {
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  
+  /* Skills List with Hover Effects */
+  .skill-list {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-item {
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+    background-color: rgba(255,255,255,0.7);
+    
+    &:hover {
+      background: linear-gradient(135deg, rgba(106, 17, 203, 0.1) 0%, rgba(37, 117, 252, 0.1) 100%);
+      transform: translateX(5px);
+      
+      .skill-icon {
+        color: #6a11cb;
+      }
+    }
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .skill-icon {
+    color: #6a11cb;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Themed Card Icons */
+  .movie-icon {
+    color: #9c27b0; /* Purple */
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #6a11cb;
+      transform: rotate(-5deg) scale(1.1);
+    }
+  }
+  
+  .music-icon {
+    color: #3f51b5; /* Indigo */
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #2196f3;
+      transform: scale(1.1);
+    }
+  }
+  
+  .book-icon {
+    color: #673ab7; /* Deep purple */
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #9c27b0;
+      transform: rotate(5deg) scale(1.1);
+    }
+  }
+  
+  /* Purple Outline Button */
+  .btn-purple-outline {
+    border: 2px solid #6a11cb;
+    color: #6a11cb;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      border-color: transparent;
+    }
+  }
+
+  /* Movies */
+.movies-section {
+    background-color: #f8f0ff;
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1);
+  }
+  
+  .movie-icon {
+    color: #9c27b0;
+    margin-right: 10px;
+  }
+  
+  .movie-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: rgba(255,255,255,0.8);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(106, 17, 203, 0.2);
+      
+      .movie-poster {
+        opacity: 0.9;
+      }
+    }
+  }
+  
+  .movie-poster {
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .movie-link {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #2575fc;
+      text-decoration: underline;
+    }
+  }
+  
+  .btn-purple {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  /* Songs  */
+.songs-section {
+    background-color: #f8f0ff;
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1);
+  }
+  
+  .music-icon {
+    color: #3f51b5;
+    margin-right: 10px;
+  }
+  
+  .song-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: rgba(255,255,255,0.8);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(106, 17, 203, 0.2);
+      
+      .album-cover {
+        opacity: 0.9;
+      }
+    }
+  }
+  
+  .album-cover {
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .song-link {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #2575fc;
+      text-decoration: underline;
+    }
+  }
+  
+  .btn-spotify {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #1ed760;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .btn-purple {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  /* Books Section Styling */
+.books-section {
+    background-color: #f8f0ff;
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1);
+  }
+  
+  .book-icon {
+    color: #673ab7;
+    margin-right: 10px;
+  }
+  
+  .book-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: rgba(255,255,255,0.8);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(106, 17, 203, 0.2);
+      
+      .book-cover {
+        opacity: 0.9;
+      }
+    }
+  }
+  
+  .book-cover {
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .book-link {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #2575fc;
+      text-decoration: underline;
+    }
+  }
+  
+  .btn-goodreads {
+    background-color: #9139a9;
+    color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #5d0a6b;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .btn-purple {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  /* Portfolio Section Styling */
+.portfolio-section {
+    background-color: #f8f0ff;
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1);
+    margin: 2rem 0;
+  }
+  
+  .portfolio-icon {
+    color: #9c27b0;
+    margin-right: 10px;
+  }
+  
+  .portfolio-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: rgba(255,255,255,0.9);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(106, 17, 203, 0.15);
+    }
+  }
+  
+  /* Larger card size */
+  .portfolio-image {
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+    
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #6a11cb;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-footer {
+    background-color: rgba(255,255,255,0.7);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 1.25rem 2rem;
+  }
+  
+  /* Purple theme elements */
+  .bg-purple-light {
+    background-color: #e2d4f7 !important;
+    color: #6a11cb;
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em !important;
+  }
+  
+  .btn-purple {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+  }
+  
+  .btn-outline-purple {
+    border: 2px solid #6a11cb;
+    color: #6a11cb;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: #6a11cb;
+      color: white;
+      border-color: #6a11cb;
+    }
+  }
+  
+  .tech-tags {
+    .badge {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+  }
