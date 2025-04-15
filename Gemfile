@@ -30,7 +30,7 @@ gem 'bootstrap', '~> 5.3.3'
 gem 'dartsass-sprockets'  #sass is a language that is compiled to CSS
 gem 'autoprefixer-rails'  # For Autoprefixer (browser compatibility)
 gem 'jquery-rails'  # to use jquery components
-gem 'font-awesome-sass', '~> 6.4.0'
+gem 'font-awesome-sass', '~> 6.7.2'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
