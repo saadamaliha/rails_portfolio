@@ -26,7 +26,7 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 #Bootstrap and fontawesome stuff
-gem 'bootstrap', '~> 5.3.3'
+gem 'bootstrap', '~> 5.3.5'
 gem 'dartsass-sprockets'  #sass is a language that is compiled to CSS
 gem 'autoprefixer-rails'  # For Autoprefixer (browser compatibility)
 gem 'jquery-rails'  # to use jquery components
